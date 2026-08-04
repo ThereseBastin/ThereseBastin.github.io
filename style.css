@@ -1,0 +1,182 @@
+:root {
+  --navy: #102f4c;
+  --navy-dark: #0a2136;
+  --blue: #245d89;
+  --blue-soft: #eaf1f6;
+  --ink: #1d2a33;
+  --muted: #61717d;
+  --line: #dce4ea;
+  --paper: #ffffff;
+  --background: #f4f7f9;
+  --shadow: 0 18px 50px rgba(15, 47, 76, 0.10);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+a { color: var(--blue); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { color: var(--navy-dark); }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  color: white;
+  background: rgba(10, 33, 54, 0.96);
+  border-bottom: 1px solid rgba(255,255,255,.12);
+  backdrop-filter: blur(12px);
+}
+.header-inner {
+  width: min(1120px, calc(100% - 40px));
+  min-height: 74px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.identity { color: white; text-decoration: none; display: flex; flex-direction: column; line-height: 1.25; }
+.identity:hover { color: white; }
+.name { font-family: Georgia, "Times New Roman", serif; font-size: 1.35rem; font-weight: 700; }
+.role { color: #ccdae5; font-size: .78rem; margin-top: 4px; }
+nav { display: flex; gap: 22px; white-space: nowrap; }
+nav a { color: #e7eef4; text-decoration: none; font-size: .9rem; font-weight: 600; }
+nav a:hover { color: white; }
+
+main {
+  width: min(1060px, calc(100% - 40px));
+  margin: 42px auto;
+  background: var(--paper);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 58px;
+  align-items: center;
+  padding: 74px 72px;
+  background: linear-gradient(145deg, #ffffff 0%, #f7fafc 70%, #edf3f7 100%);
+  border-bottom: 1px solid var(--line);
+}
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--blue);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+h1, h2, h3 { line-height: 1.25; }
+h1, h2 { font-family: Georgia, "Times New Roman", serif; color: var(--navy); }
+h1 { margin: 0 0 20px; font-size: clamp(2.8rem, 6vw, 4.5rem); letter-spacing: -.035em; }
+h2 { margin: 0; font-size: clamp(2rem, 4vw, 2.75rem); }
+h3 { margin: 10px 0 8px; color: var(--navy-dark); font-size: 1.28rem; }
+.lead { font-size: 1.16rem; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 18px;
+  border-radius: 8px;
+  font-size: .92rem;
+  font-weight: 750;
+  text-decoration: none;
+}
+.button.primary { background: var(--navy); color: white; }
+.button.primary:hover { background: var(--navy-dark); color: white; }
+.button.secondary { border: 1px solid var(--navy); color: var(--navy); background: white; }
+.portrait-wrap { text-align: center; }
+.portrait {
+  width: 240px;
+  max-width: 100%;
+  aspect-ratio: 1;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 14px 34px rgba(16,47,76,.18);
+  border: 7px solid white;
+}
+.portrait-note { margin: 12px 0 0; color: var(--muted); font-size: .72rem; }
+
+.section { padding: 64px 72px; border-bottom: 1px solid var(--line); }
+.section-heading { margin-bottom: 28px; }
+.research-card, .publication {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 28px;
+  margin-top: 22px;
+  background: #fff;
+}
+.research-card { box-shadow: 0 8px 25px rgba(16,47,76,.05); }
+.card-topline { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
+.status, .topic {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.status { background: var(--navy); color: white; }
+.topic { background: var(--blue-soft); color: var(--blue); }
+.coauthors { margin-top: 0; color: var(--muted); font-size: .92rem; }
+details { margin-top: 14px; border-top: 1px solid var(--line); padding-top: 12px; }
+summary { color: var(--blue); cursor: pointer; font-weight: 750; }
+summary:hover { color: var(--navy-dark); }
+.publication h3 { margin-top: 0; }
+.publication p:last-child { margin-bottom: 0; }
+.media { font-size: .9rem; }
+
+.timeline { list-style: none; margin: 0; padding: 0; }
+.timeline li { display: grid; grid-template-columns: 140px 1fr; gap: 20px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+.timeline li:last-child { border-bottom: 0; }
+.timeline span { color: var(--blue); font-weight: 800; font-size: .86rem; }
+
+.contact-section {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 48px;
+  padding: 64px 72px;
+  background: var(--navy);
+  color: #e8f0f5;
+}
+.contact-section h2, .contact-section .eyebrow { color: white; }
+.contact-links { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 10px; }
+.contact-links a { color: white; font-weight: 700; }
+footer { text-align: center; color: var(--muted); font-size: .82rem; padding: 12px 20px 34px; }
+
+@media (max-width: 900px) {
+  .header-inner { align-items: flex-start; padding: 14px 0; }
+  nav { flex-wrap: wrap; justify-content: flex-end; gap: 8px 16px; }
+  .hero { grid-template-columns: 1fr; padding: 54px 42px; }
+  .portrait-wrap { order: -1; }
+  .portrait { width: 190px; }
+  .section, .contact-section { padding: 52px 42px; }
+}
+
+@media (max-width: 650px) {
+  body { font-size: 16px; }
+  .site-header { position: static; }
+  .header-inner { width: min(100% - 28px, 1120px); display: block; }
+  nav { margin-top: 14px; justify-content: flex-start; }
+  .role { max-width: 320px; }
+  main { width: 100%; margin: 0; border-radius: 0; box-shadow: none; }
+  .hero, .section, .contact-section { padding: 42px 24px; }
+  .hero { gap: 34px; }
+  .research-card, .publication { padding: 22px; }
+  .contact-section { grid-template-columns: 1fr; gap: 22px; }
+  .timeline li { grid-template-columns: 1fr; gap: 3px; }
+}
