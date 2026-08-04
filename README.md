@@ -1,58 +1,173 @@
-# Thérèse Bastin — academic website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thérèse Bastin — PhD Candidate in Economics at DULBEA, Université libre de Bruxelles. Research in public economics, taxation, gender, intergenerational transfers, and wealth inequality.">
+  <meta name="author" content="Thérèse Bastin">
+  <meta property="og:title" content="Thérèse Bastin | PhD Candidate in Economics">
+  <meta property="og:description" content="Research in public economics, taxation, gender, intergenerational transfers, and wealth inequality.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://theresebastin.github.io/">
+  <meta property="og:image" content="https://theresebastin.github.io/assets/therese-bastin.jpg">
+  <link rel="canonical" href="https://theresebastin.github.io/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Thérèse Bastin | PhD Candidate in Economics</title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="identity" href="#top" aria-label="Back to the top">
+        <span class="name">Thérèse Bastin</span>
+        <span class="role">PhD Candidate in Economics · DULBEA · Université libre de Bruxelles</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#research">Research</a>
+        <a href="#presentations">Presentations</a>
+      </nav>
+    </div>
+  </header>
 
-A lightweight academic website prepared for GitHub Pages.
+  <main id="top">
+    <section class="hero" id="about">
+      <div class="hero-copy">
+        <p class="eyebrow">Public economics · Wealth taxation · Inequality</p>
+        <h1>Thérèse Bastin</h1>
+        <p class="lead">
+          I am a PhD candidate at the
+          <a href="https://www.ulb.be/" target="_blank" rel="noopener noreferrer">Université libre de Bruxelles</a>,
+          affiliated with
+          <a href="https://dulbea.ulb.be/en/" target="_blank" rel="noopener noreferrer">DULBEA</a>.
+          I work under the supervision of
+          <a href="https://ilan.tojerow.web.ulb.be/" target="_blank" rel="noopener noreferrer">Ilan Tojerow</a>
+          and
+          <a href="https://www.bayenet.be/" target="_blank" rel="noopener noreferrer">Benoît Bayenet</a>.
+        </p>
+        <p>
+          My research lies in public economics, with a particular focus on taxation,
+          gender, intergenerational transfers, and wealth inequality. In January 2025,
+          I was awarded a four-year FNRS–FRESH fellowship.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="https://drive.google.com/file/d/1ymxhvRVEx3WnKl6lrfTv1D6zsyfHBZyx/view?usp=sharing" target="_blank" rel="noopener noreferrer">View my CV</a>
+          <a class="button secondary" href="mailto:therese.bastin@ulb.be">Email me</a>
+        </div>
+      </div>
 
-## 1. Replace the portrait
+      <figure class="portrait-wrap">
+        <img class="portrait" src="assets/therese-bastin.jpg" alt="Portrait of Thérèse Bastin">
+      </figure>
+    </section>
 
-Place your photograph in `assets/` and name it `profile.jpg`. Then replace this line in `index.html`:
+    <section class="contact-section" id="contact">
+      <div>
+        <p class="eyebrow">Get in touch</p>
+        <h2>Contact</h2>
+        <p>
+          DULBEA — Department of Applied Economics<br>
+          Solvay Brussels School of Economics and Management<br>
+          Université libre de Bruxelles
+        </p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:therese.bastin@ulb.be">therese.bastin@ulb.be</a>
+        <a href="https://dulbea.ulb.be/en/" target="_blank" rel="noopener noreferrer">DULBEA</a>
+        <a href="https://www.ulb.be/" target="_blank" rel="noopener noreferrer">ULB</a>
+      </div>
+    </section>
 
-```html
-<img class="portrait" src="assets/profile-placeholder.svg" alt="Thérèse Bastin">
-```
+    <section class="section" id="research">
+      <div class="section-heading">
+        <p class="eyebrow">Current and applied work</p>
+        <h2>Research</h2>
+      </div>
 
-with:
+      <div class="research-group">
+        <h3 class="group-title">Work in Progress</h3>
 
-```html
-<img class="portrait" src="assets/profile.jpg" alt="Thérèse Bastin">
-```
+        <article class="paper-card">
+          <h4>Behavioural Responses to Asset-Specific Wealth Taxes</h4>
+          <p class="abstract-label">Abstract</p>
+          <p>
+            This paper examines taxpayers' behavioural responses to an asset-specific wealth tax. Leveraging the introduction of Belgium's Annual Tax on Securities Accounts (ATSA) and unique individual-level banking data, we provide the first evidence on the behavioural effects of a financial asset-specific wealth tax. Using a dynamic bunching method, we find no statistically significant evidence that taxpayers near the threshold reduced their taxable securities to avoid the tax. An event-study design further reveals substantial changes in portfolio composition: bond holdings and other taxable assets decline by approximately 27% and 24%, respectively, over 2017–2019, while share holdings fall by about 12% in 2017 only. These declines reflect an important reallocation away from safe, low-return and liquid assets, mainly driven by a minority of taxpayers exiting bonds and shares. Taken together, these findings suggest that wealth taxes targeting fully observable, liquid assets and relying on third-party reporting may limit aggregate erosion of the taxable base while still affecting portfolio composition.
+          </p>
+        </article>
 
-You can also remove the small sentence below the photograph.
+        <article class="paper-card">
+          <h4>Effect of wealth reception on beneficiaries' professional careers, with a special focus on gender differences</h4>
+          <p class="abstract-label">Abstract</p>
+          <p>
+            Standard economic theory predicts that a wealth shock arising from the receipt of an inheritance leads individuals to increase their consumption of normal goods, including consumption and leisure, and to reduce their labour supply. At the same time, the fiscal pressures associated with population ageing in Europe have led governments to adopt policies aimed at increasing labour-market participation, notably by raising the retirement age. If these theoretical predictions are borne out empirically, wealth transfers could therefore undermine public efforts to maintain labour-force participation. The first objective of this study is to inform the design of social security and inheritance-tax policies by examining how beneficiaries respond to the receipt of an inheritance. A central question is whether this wealth shock affects male and female beneficiaries similarly. Recent studies find that only women reduce their labour-market participation after receiving an inheritance ([6]; [7]), a result consistent with the greater elasticity of female labour supply. However, this literature does not examine whether the observed effects vary according to the form of wealth transfer, namely an inter vivos gift or an inheritance. Although these two forms of transfer are often treated as perfect substitutes, they differ in several respects that may shape spouses' responses differently. Using high-quality individual-level administrative data on gifts and inheritances, the second objective of this study is to provide the first estimates of beneficiaries' responses to the receipt of each type of transfer.
+          </p>
+        </article>
+      </div>
 
-## 2. Add the CV locally (optional)
+      <div class="research-group reports-group">
+        <h3 class="group-title">Report and policy papers (in French)</h3>
 
-Put the PDF in `assets/` as `Therese_Bastin_CV.pdf`, then replace the Google Drive URL in the “View my CV” button with:
+        <article class="paper-card">
+          <h4>
+            <a href="https://www.plan.be/sites/default/files/documents/wp_dc202408_12957_fr.pdf" target="_blank" rel="noopener noreferrer">
+              Calcul de l’impact budgétaire d’un impôt sur les grands patrimoines avant effets macroéconomiques
+            </a>
+          </h4>
+          <p class="abstract-label">Abstract</p>
+          <p lang="fr">
+            Dans le cadre de l’exercice de chiffrage des programmes électoraux, le Bureau fédéral du Plan anticipe des propositions de partis politiques pour l’instauration d’un impôt sur les grands patrimoines. Le présent document vise à expliquer la méthode d’estimation de son impulsion budgétaire. Pour ce faire, nous utilisons les données de l’enquête sur les comportements financiers des ménages de la Banque nationale belge.
+          </p>
+          <p lang="fr">
+            Nous développons la méthode de calcul pour l’estimation des recettes avec ou sans la possibilité de réponses comportementales des contribuables. Afin d’inclure les potentielles réactions comportementales, nous analysons deux pistes, soit la méthode du bunching et l’inclusion d’élasticités du patrimoine net estimées à l’étranger. Les résultats montrent que nous préserverons uniquement la deuxième méthode lors du chiffrage DC2024.
+          </p>
+          <p lang="fr">
+            De plus, ce document expose la revue de la littérature des effets de la taxe sur des indicateurs macroéconomiques – littérature pertinente pour comprendre l’inclusion de l’impôt dans les modèles HERMES et QUEST.
+          </p>
+        </article>
 
-```text
-assets/Therese_Bastin_CV.pdf
-```
+        <article class="paper-card">
+          <h4>
+            <a href="https://dulbea.ulb.be/wp-content/uploads/2023/11/DULBEA-POLICY-REPORT-No23.02-FR.pdf" target="_blank" rel="noopener noreferrer">
+              Étude relative à la taxation des grands patrimoines
+            </a>
+          </h4>
+          <p class="abstract-label">Abstract</p>
+          <p lang="fr">
+            L’idée d’une taxe sur les grands patrimoines refait surface en Belgique et ailleurs (Irlande, Allemagne, États-Unis, Royaume-Uni), à l’opposé de la tendance observée ces dernières années. Si douze pays de l’OCDE y avaient recours en 1990, ils ne sont plus que trois depuis 2018. Une telle taxe pose une série de questions.
+          </p>
+          <p lang="fr">
+            En Belgique, en l’absence de cadastre du patrimoine, l’instauration d’un impôt sur la patrimoine net (IPN) nécessiterait au préalable soit la déclaration par les contribuables de leur patrimoine soit le rassemblement de l’ensemble des données existantes auprès des différentes institutions ou parties tierces. Ensuite se poserait la question du choix des modalités de la taxe (taux, seuil, progressivité, etc.), ce qui n’est pas neutre en termes d’équité et/ou d’efficacité.
+          </p>
+          <p lang="fr">
+            Une telle taxe pourrait engendrer, à court terme, des comportements d’évitement (ou ingénierie fiscale dans le respect de la loi) ou d’évasion fiscale (contournement de la loi) et, à plus long terme, des modifications de comportements en termes d’épargne, d’offre de travail et de migration. Cette étude fait le tour de la question.
+          </p>
+        </article>
+      </div>
+    </section>
 
-## 3. Publish with GitHub Pages
+    <section class="section" id="presentations">
+      <div class="section-heading">
+        <p class="eyebrow">Selected conferences</p>
+        <h2>Presentations</h2>
+      </div>
+      <ul class="timeline">
+        <li><span>July 2025</span>24th Journées Louis-André Gérard-Varet (LAGV)</li>
+        <li><span>June 2025</span>BSE Summer Forum — Advances in Economic Research Using Bank Transactions Data</li>
+        <li><span>June 2023</span>Stone Center Summer Institute, UC Berkeley</li>
+        <li><span>March 2023</span>50th Meeting of the European Public Choice Society</li>
+      </ul>
+    </section>
+  </main>
 
-### Recommended address: `https://YOUR-USERNAME.github.io/`
+  <footer>
+    <p>© <span id="year">2026</span> Thérèse Bastin. Hosted with GitHub Pages.</p>
+  </footer>
 
-1. Create a public GitHub repository named exactly `YOUR-USERNAME.github.io`.
-2. Upload all files from this folder to the repository root.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select branch `main`, folder `/ (root)`, and click **Save**.
-
-### Alternative address: `https://YOUR-USERNAME.github.io/website/`
-
-Create a repository named `website` instead and use the same Pages settings.
-
-## 4. Edit the content
-
-Most content is in `index.html`. Visual settings are in `style.css`.
-
-Useful elements:
-
-- `<section id="research">` — research projects
-- `<section id="reports">` — reports and policy papers
-- `<section id="presentations">` — conference list
-- `<section id="contact">` — contact information
-
-## Notes
-
-- The site does not require a database, package manager, or build step.
-- It is responsive and works on desktop and mobile.
-- Abstracts use native HTML `<details>` elements, so no JavaScript library is required.
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
